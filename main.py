@@ -3,10 +3,10 @@ from flask_restful import Resource, Api
 from flask_cors import CORS
 
 app = Flask(__name__)
-# CORS(
-#     app,
-#     supports_credentials=True
-# )
+CORS(
+    app,
+    supports_credentials=True
+)
 api = Api(app)
 
 class Noot(Resource):
